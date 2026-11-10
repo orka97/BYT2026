@@ -1,39 +1,68 @@
+Claude
+DESKTOP-ESRFUIS, Connected
+Ran 2 commands
+Od teraz zawsze podaję numery s. Stan gr17 o 16:38: 8 osób w repo.
+
+s	Student	Plik	Link	Uwagi
+s33796	Diachuk, Artem	✓	✓	
+s32794	Gnatiuk, Stanislav	✓	✓	
+s33587	Oliinyk, Anton	✓	✓	commit podpisany „Josh Swain”
+s34461	Ceylan, Zarif	✓	✓	wpis w sekcji gr11 (linia 30)
+s34585	Stepanok, Kyryl	✓	✓	plik ma tylko 8 bajtów
+s32686	Atamanenko, Oskar	✓	⚠️	link wskazuje na s33796 (plik Diachuka), do poprawy
+s29972	Bingöl, Ömer	✓	✓	
+s32652	Konyar, Ediz (nowy)	✓	✓	wpis w sekcji gr11 (linia 28)
+Konyar: jego merge ma jako opis wklejony cały szablon gita („# Please enter a commit message…”). To znak, że przy merge’u nie poradził sobie z vimem albo z opisem commita. Nie psuje to repo, ale widać, że w tym kroku się pogubił.
+
+Jeszcze ich nie ma w repo: Popovskyi i San (oddali log), Gałecki, Hut, Isov, Tsyshevska, Tugac. Ich numerów s nie znam, bo widzę je dopiero, kiedy zrobią push.
+
+1794325148341_image.png
+1794325156250_image.png
+Pull and recheck
+Zestawienie Teams i repo na 16:39 (gr17, 15 osób):
+
+Ocenieni (4)
+s	Student	Ocena	Repo
+s32686	Atamanenko, Oskar	10	⚠️ link nadal zły (linia 37 → s33796, plik Diachuka)
+s33796	Diachuk, Artem	10	✓
+s32794	Gnatiuk, Stanislav	10	✓
+s33587	Oliinyk, Anton	10	✓ (commit jako „Josh Swain”)
+Oskar ma 10, a poprawki jeszcze nie wysłał. Tak samo było rano z Artemem Zaitsevem. Jeśli wymagasz poprawki, przypomnij mu, że musi zrobić push.
+
+Część 2 w repo, brak logu w Teams (Wyświetlono)
+s	Student	Uwagi
+s29972	Bingöl, Ömer	
+s34461	Ceylan, Zarif	wpis w sekcji gr11
+s32652	Konyar, Ediz	wpis w sekcji gr11
+Log w Teams i część 2 w repo, do ocenienia
+s	Student	Uwagi
+s34585	Stepanok, Kyryl	plik ma tylko 8 bajtów
+Log w Teams, ale nie ma ich w repo (Przesłano)
+Hut, Isov, Popovskyi, San, Tsyshevska, Tugac. Numery s poznam, kiedy zrobią push.
+
+Nic nie oddał
+Gałecki, Maksy… (Wyświetlono).
+
+kto teraz popsul list
+
+Ran 3 commands
+Plik popsuł Omar Khaleel (s25437) commitem e03efd8 „Resolved merge conflict in list.html” o 16:41. Wbrew opisowi wcommitował plik ze znacznikami konfliktu (linie 8, 36 i 83), więc teraz wszystkie wpisy są w pliku dwa razy.
+
+Dlaczego konflikt był tak duży: Omar przed pushem przeformatował cały plik. Usunął wcięcia, dodał <b> w tytule, ujął gr11 i gr17 w <p> i połączył „gr14 gr12” w jedną linię. Git uznał więc, że zmieniła się każda linia, i cały plik wszedł w konflikt.
+
+Fixxxer4 = Mehmet Selim San (s33920) jest niewinny. Jego merge’e miały 0 znaczników. Dodał swój plik s33920.html i link, tyle że jeden z jego merge’y też ma jako opis wklejony szablon gita.
+
+Naprawiona wersja do wklejenia
+Sprawdziłam ją skryptem: 26 linków, 26 plików, bez duplikatów, bez znaczników. Ceylan i Konyara przeniosłam do sekcji gr17. Celowo zostawiłam błędny link Oskara (s33796), bo to jego poprawka do zrobienia.
+
+html
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <title>BYT 2026 - Students list</title>
+    <meta charset="utf-8">
+    <title>BYT 2026 - Students list</title>
 </head>
 <body>
-<<<<<<< HEAD
-<h1><b>BYT 2026 - Students list</b></h1>
-<p>gr11</p>
-<p><a href="s32909.html">Aliaksei Liakhovich</a></p>
-<p><a href="s30829.html">Aleksej Volodko</a></p>
-<p><a href="s999575.html">Adam Kardouchi</a></p>
-<p><a href="s32813.html">Tymofii Hupalo</a></p>
-<p><a href="s34336.html">Vedat Akturk</a></p>
-<p><a href="s33019.html">Mariia Sorokina</a></p>
-<p><a href="s26941.html">Taha Sahin</a></p>
-<p><a href="s30268.html">Artem Zaitsev</a></p>
-<p><a href="s33020.html">Matvii Obodovskyi</a></p>
-<p><a href="s31143.html">Zeynep Kucukkaya</a></p>
-<p><a href="s33821.html">Mehmet Durar</a></p>
-<p><a href="s999562.html">Paula Santana Garcia</a></p>
-<p><a href="s32646.html">Ceyda Ozeren</a></p>
-<p><a href="s32749.html">Atakan Öksüzoğlu</a></p>
-<p><a href="s33909.html">Berke Aydin</a></p>
-<p><a href="s32053.html">Alicja Grygielska</a></p>
-<p><a href="s34461.html">Zarif Melisa Ceylan</a></p>
-<p>gr17</p>
-<p><a href="s25437.html">Omar Khaleel</a></p>
-<p><a href="s33796.html">Artem Diachuk</a></p>
-<p><a href="s33796.html">Oskar Atamanenko</a></p>
-<p><a href="s34585.html">Kyryl Stepanok</a></p>
-<p><a href="s32794.html">Stanislav Gnatiuk</a></p>
-<p><a href="s33587.html">Anton Oliinyk</a></p>
-<p>gr14 gr12</p>
-=======
     <h1>BYT 2026 - Students list</h1>
     <!-- Add your line below: <p><a href="sXXXXX.html">Firstname Lastname</a></p> -->
     gr11
@@ -54,32 +83,32 @@
     <p><a href="s33909.html">Berke Aydin</a></p>
     <p><a href="s32053.html">Alicja Grygielska</a></p>
 
-<p><a href="s32652.html">Ediz Konyar</a></p>
-
-	<p><a href="s34461.html">Zarif Melisa Ceylan</a></p>
-
-
-    
     gr17
     <p><a href="s33796.html">Artem Diachuk</a></p>
-	
-	<p><a href="s33796.html">Oskar Atamanenko</a></p>
-	
-	<p><a href="s34585.html">Kyryl Stepanok</a></p>
+    <p><a href="s33796.html">Oskar Atamanenko</a></p>
+    <p><a href="s34585.html">Kyryl Stepanok</a></p>
     <p><a href="s32794.html">Stanislav Gnatiuk</a></p>
-    <p><a href="s33920.html">Mehmet Selim San</a></p>	
     <p><a href="s33587.html">Anton Oliinyk</a></p>
-
-
-
-
     <p><a href="s29972.html">Omer Faruk Bingol</a></p>
+    <p><a href="s34461.html">Zarif Melisa Ceylan</a></p>
+    <p><a href="s32652.html">Ediz Konyar</a></p>
+    <p><a href="s33920.html">Mehmet Selim San</a></p>
+    <p><a href="s25437.html">Omar Khaleel</a></p>
 
     gr14
 
     gr12
 
-    
->>>>>>> 85d4adc85342911e75424772cc3aafb5c4312ba0
 </body>
 </html>
+Jeszcze jedno: Omar nie jest na liście gr17 w Teams
+Twoje zrzuty z Teams dla gr17 obejmują 15 osób i nie ma wśród nich Omara Khaleela (s25437). Może być z innej grupy albo odrabia zadanie. Warto to sprawdzić, zanim go ocenisz.
+
+How is Claude doing this session?
+
+
+
+
+
+Claude is AI and can make mistakes.
+Claude finished the response
